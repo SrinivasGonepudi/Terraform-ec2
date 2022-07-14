@@ -11,8 +11,3 @@ resource "aws_instance" "this" {
   vpc_security_group_ids = ["sg-013546b7eb9f4686b"]
   ebs_optimized          = "${var.ebs_optimized}"
 }
-
-root_block_device {
-    volume_type = "${var.ebs_volume_type}"
-    volume_size = "${var.ebs_volume_size}"
-  }
